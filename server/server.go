@@ -2,8 +2,9 @@ package server
 
 import (
   "log"
-  "git.apache.org/thrift.git/lib/go/thrift"
-  "squarecode/dynastymasra/thrift/person"
+  "github.com/apache/thrift/lib/go/thrift"
+  "github.com/rjprice04/GoGinThrift.git/service/person"
+  "github.com/rjprice04/GoGinThrift.git/gen-thrift/person"
 )
 
 /**

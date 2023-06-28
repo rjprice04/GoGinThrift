@@ -3,7 +3,8 @@ package server
 import (
   "log"
   "fmt"
-  "squarecode/dynastymasra/thrift/person"
+
+  "github.com/rjprice04/GoGinThrift.git/gen-thrift/person"
 )
 
 /**

@@ -1,10 +1,6 @@
-package routes
+package main
 
-import (
-	"squarecode/dynastymasra/rhino/api/handler"
-
-	"github.com/gin-gonic/gin"
-)
+import  "github.com/rjprice04/GoGinThrift.git/server"
 
 /**
  * Created by Dynastymasra
@@ -15,7 +11,8 @@ import (
  * Mobile and Backend Developer
  */
 
-func Index(router *gin.RouterGroup) {
-	router.GET("/", handler.Index)
-	router.GET("/ping", handler.Pong)
+func main() {
+  host := "localhost:4000"
+  server := server.NewServer(host)
+  server.Run()
 }
